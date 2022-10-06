@@ -1,0 +1,16 @@
+Questão 1 
+
+SELECT name, SUM(mensalidade)
+FROM cursos,compras 
+WHERE course_id = 10 and cursos.id = 10;
+
+Questão 2
+
+SELECT id, cliente_name, course_id
+FROM compras
+WHERE mensalidade > 110.00;
+
+Questão 3
+
+SELECT * from cursos
+WHERE id NOT IN (SELECT course_id FROM compras);
